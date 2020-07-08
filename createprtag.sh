@@ -4,6 +4,10 @@ echo 'Note: Tag will be created from master branch. This is ideal for planned re
 : ${tag?"Please specify Tag Name in this format ( vX.X.X-pr-MMDDYYYY-N )"}
 : ${changes?"Please specify features or changes as part of this release"}
 
+git config --global user.email "bmohammad@evoketechnologies.com"
+git config --global user.name "mdbadiyuzamaevoke"
+
+
 pwd
 ls -l
 git branch
