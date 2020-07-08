@@ -4,10 +4,16 @@ echo 'Note: Tag will be created from master branch. This is ideal for planned re
 : ${tag?"Please specify Tag Name in this format ( vX.X.X-pr-MMDDYYYY-N )"}
 : ${changes?"Please specify features or changes as part of this release"}
 
+pwd
+ls -l
+git branch
+
 echo 'Tag Name: '${tag}
 echo 'Changes: '${changes}
 
 git tag -a ${tag} -m ${changes} origin
+git tag
+
 git push origin ${tag}
 
 echo ${tag}' successfully created!'
