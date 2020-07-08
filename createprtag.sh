@@ -11,7 +11,7 @@ git branch
 echo 'Tag Name: '${tag}
 echo 'Changes: '${changes}
 
-git tag -a ${tag} -m ${changes} origin
+git tag -a ${tag} -m ${changes} origin/master
 git tag
 
 git push origin ${tag}
